@@ -16,9 +16,9 @@ namespace MigrationPractice.Data.Models.HomeWork
         [ForeignKey(nameof(Group))]
         public int GroupId { get; set; }
 
-
         public Teacher Teacher { get; set; }
 
         public Group Group { get; set; } 
+        
     }
 }

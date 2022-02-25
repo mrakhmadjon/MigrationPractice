@@ -44,15 +44,15 @@ namespace MigrationPractice.Data
 
             //
             modelBuilder.Entity<Teacher>().HasData(
-                new Teacher { Id = 1, FullName = "Abdusattor Ortiqov", Experience = 20, CardNumber = "6800101023233003" },
-                new Teacher { Id = 2, FullName = "Sardor Komilov", Experience = 25, CardNumber = "6800101023235005" },
-                new Teacher { Id = 3, FullName = "Jahongir Aripov", Experience = 28, CardNumber = "6800101023234004" }
+                new Teacher { Id = 1, FullName = "Abdusattor Ortiqov", Experience = 20, CardNumber = "6800101023233003", SubjectId  = 1 },
+                new Teacher { Id = 2, FullName = "Sardor Komilov", Experience = 25, CardNumber = "6800101023235005", SubjectId = 2 },
+                new Teacher { Id = 3, FullName = "Jahongir Aripov", Experience = 28, CardNumber = "6800101023234004", SubjectId = 3 }
                 );
 
             modelBuilder.Entity<Subject>().HasData(
-                new Subject { Id = 1, Name = "Math", TeacherId = 1 },
-                new Subject { Id = 2, Name = "Physics", TeacherId = 2 },
-                new Subject { Id = 3, Name = "Informatics", TeacherId = 3 });
+                new Subject { Id = 1, Name = "Math"},
+                new Subject { Id = 2, Name = "Physics" },
+                new Subject { Id = 3, Name = "Informatics" });
 
 
             modelBuilder.Entity<Group>().HasData(

@@ -11,9 +11,6 @@ namespace MigrationPractice.Data.Models
     {
         public string Name { get; set; }
 
-        [ForeignKey(nameof(Teacher))]
-        public int  TeacherId { get; set; }
-
-        public Teacher Teacher { get; set; }
+       
     }
 }
